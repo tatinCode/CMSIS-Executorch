@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/camera-inference.debug+DevKit-E8-HP-configure"
+		},
+		{
+			"file" : "/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/camera-inference.debug+DevKit-E8-HP-configure.rule"
+		},
+		{
+			"file" : "/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-configure.rule"
+		},
+		{
+			"file" : "/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-patch.rule"
+		},
+		{
+			"file" : "/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-update.rule"
+		},
+		{
+			"file" : "/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-download.rule"
+		},
+		{
+			"file" : "/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"camera-inference.debug+DevKit-E8-HP"
+		],
+		"name" : "camera-inference.debug+DevKit-E8-HP-configure"
+	}
+}

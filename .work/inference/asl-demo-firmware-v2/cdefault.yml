@@ -1,0 +1,37 @@
+{
+  "default": {
+    "misc": [
+      {
+        "for-compiler": "GCC",
+        "C": [
+          "-std=c99",
+          "-fshort-enums",
+          "-fdata-sections",
+          "-ffunction-sections"
+        ],
+        "CPP": [
+          "-std=c++17",
+          "-fshort-enums",
+          "-fno-exceptions",
+          "-fno-rtti",
+          "-fno-unwind-tables",
+          "-fdata-sections",
+          "-ffunction-sections",
+          "-Wall",
+          "-Wextra",
+          "-Werror"
+        ],
+        "Link": [
+          "--specs=nosys.specs",
+          "--entry=Reset_Handler",
+          "-Wl,-Map=/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/camera-inference.map,--cref,--print-memory-usage,--gc-sections,--no-warn-rwx-segments"
+        ],
+        "Library": [
+          "-lm",
+          "-lc",
+          "-lgcc"
+        ]
+      }
+    ]
+  }
+}

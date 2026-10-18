@@ -1,0 +1,12 @@
+# Target labels
+ camera-inference.debug+DevKit-E8-HP
+# Source files and their labels
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/camera-inference.debug+DevKit-E8-HP-executes
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/camera-inference.debug+DevKit-E8-HP-executes.rule
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-executes.rule
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-build.rule
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-configure.rule
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-patch.rule
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-update.rule
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-download.rule
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/camera-inference.debug+DevKit-E8-HP/src/camera-inference.debug+DevKit-E8-HP-stamp/camera-inference.debug+DevKit-E8-HP-mkdir.rule

@@ -87,10 +87,14 @@ fvp_stdout.log
 !.vscode/launch.json.mac
 !.vscode/tasks.json
 
-# HandGPT local dependencies, models, datasets, logs, and build outputs.
-/.work/
+# Downloaded HandGPT datasets.
 /asl-alphabet.zip
 /asl_alphabet_train/
 /asl_alphabet_test/
 *.pyo
 *.pyd
+
+# Submission includes the prepared HandGPT flash package and firmware, including
+# binaries and build files otherwise excluded by the generic rules above.
+!/.work/
+!/.work/**

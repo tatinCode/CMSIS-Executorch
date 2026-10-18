@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "status": "tool_exited_successfully",
+  "requested_at": "2026-10-18T22:59:08.405364+00:00",
+  "target": "asl-personal-experimental.debug+DevKit-E8-HP",
+  "binary_sha256": "224d4591a2086f47276a889661391677ac7a736a8e797e7d2d26fadba3ca9a04",
+  "receipt_sha256": "00d6e3f8abe617f48367ef7b9d75af93e06537987a5264bc16791c1beaac5a85",
+  "writer_helper_sha256": "e5d5a623868a6a32febca5462bc0edc0f989ae62bdb423c2b9fc6fe004340c41",
+  "port": "/dev/ttyACM0",
+  "port_identity": {
+    "resolved": "/dev/ttyACM0",
+    "device": 7,
+    "inode": 1052,
+    "rdev": 42496
+  },
+  "package_layout": {
+    "image_address": "0x80001000",
+    "image_end": "0x80352ba0",
+    "package_address": "0x8057f0d0",
+    "package_bytes": 3888,
+    "package_end": "0x80580000",
+    "boot_cpu": "M55_HP",
+    "entries": [
+      "DEVICE",
+      "USER_APP"
+    ],
+    "toc_crc32": "0x33138a7e",
+    "complete_tail_coverage_verified": true,
+    "binary_toc_verified": true
+  },
+  "command": [
+    "/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-programming-v2/camera-inference-776sx2ld/setools/app-write-mram",
+    "-p",
+    "-c",
+    "/dev/ttyACM0"
+  ],
+  "hardware_verified": false,
+  "finished_at": "2026-10-18T23:00:39.963803+00:00"
+}

@@ -13,8 +13,13 @@ Initialize the HandGPT firmware dependency after cloning:
 git submodule update --init --recursive
 ```
 
-Local dependencies, models, build outputs (`.work/`), and downloaded ASL datasets
-are not included. Follow the HandGPT setup guide to prepare a fresh checkout.
+This submission includes the prepared flash package and matching firmware under
+`.work/inference/asl-demo-programming-v2/` and `.work/inference/asl-demo-firmware-v2/`.
+These are preserved local artifacts; their metadata contains original machine paths,
+so they are not a verified portable flashing or rebuild workflow. Toolchains,
+Python environments, training datasets, and exported model workspace are not included.
+Follow the HandGPT setup guide for dependency setup and review hardware programming
+requirements before attempting to use a package on another machine.
 
 [![Build and test Ethos-U85-256](https://github.com/Arm-Examples/CMSIS-Executorch/actions/workflows/test-cmsis-executorch.yml/badge.svg)](https://github.com/Arm-Examples/CMSIS-Executorch/actions/workflows/test-cmsis-executorch.yml)
 [![Build and test Ethos-U55-128](https://github.com/Arm-Examples/CMSIS-Executorch/actions/workflows/test-cmsis-executorch-u55.yml/badge.svg)](https://github.com/Arm-Examples/CMSIS-Executorch/actions/workflows/test-cmsis-executorch-u55.yml)

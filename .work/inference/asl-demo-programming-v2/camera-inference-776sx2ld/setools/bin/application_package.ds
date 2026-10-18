@@ -1,0 +1,4 @@
+set semihosting args ../build/images/handgpt-asl-personal-experimental.bin 0x80001000 ../build/AppTocPackage.bin 0x8057f0d0
+continue
+wait
+reset reset.hardware

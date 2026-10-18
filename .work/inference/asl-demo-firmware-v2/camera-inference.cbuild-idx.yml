@@ -1,0 +1,15 @@
+build-idx:
+  generated-by: csolution version 2.15.1+p3-gf46d68bf
+  cdefault: cdefault.yml
+  csolution: camera-inference.csolution.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: camera-inference.cproject.yml
+  cbuilds:
+    - cbuild: out/camera-inference/DevKit-E8-HP/debug/camera-inference.debug+DevKit-E8-HP.cbuild.yml
+      project: camera-inference
+      configuration: .debug+DevKit-E8-HP
+      messages:
+        info:
+          - camera-inference.cbuild-pack.yml - file generated successfully
+          - camera-inference.debug+DevKit-E8-HP.cbuild.yml - file generated successfully

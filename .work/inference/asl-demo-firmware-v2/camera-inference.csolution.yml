@@ -1,0 +1,44 @@
+{
+  "solution": {
+    "created-for": "CMSIS-Toolbox@2.15.0",
+    "cdefault": null,
+    "compiler": "GCC@13.3.1",
+    "packs": [
+      {
+        "pack": "AlifSemiconductor::Ensemble@2.2.0"
+      },
+      {
+        "pack": "ARM::CMSIS@6.1.0"
+      }
+    ],
+    "target-types": [
+      {
+        "type": "DevKit-E8-HP",
+        "device": "Alif Semiconductor::AE822FA0E5597LS0:M55_HP",
+        "board": "Alif Semiconductor::DevKit-E8",
+        "target-set": [
+          {
+            "set": null,
+            "images": [
+              {
+                "project-context": "camera-inference.debug"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "build-types": [
+      {
+        "type": "debug",
+        "optimize": "balanced",
+        "debug": "on"
+      }
+    ],
+    "projects": [
+      {
+        "project": "camera-inference.cproject.yml"
+      }
+    ]
+  }
+}

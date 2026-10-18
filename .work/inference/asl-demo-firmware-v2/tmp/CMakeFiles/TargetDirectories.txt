@@ -1,0 +1,8 @@
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/database.dir
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/camera-inference.debug+DevKit-E8-HP.dir
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/camera-inference.debug+DevKit-E8-HP-build.dir
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/camera-inference.debug+DevKit-E8-HP-configure.dir
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/camera-inference.debug+DevKit-E8-HP-executes.dir
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/camera-inference.debug+DevKit-E8-HP-database.dir
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/edit_cache.dir
+/home/tatin/projects/hackathon/HandGPT/.work/inference/asl-demo-firmware-v2/tmp/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,145 @@
+{
+  "project": {
+    "groups": [
+      {
+        "group": "Coexistence",
+        "files": [
+          {
+            "file": "../../../firmware/asl_live/src/main.cpp"
+          },
+          {
+            "file": "../../../firmware/camera_inference/src/power.cpp"
+          },
+          {
+            "file": "generated/preview.cpp"
+          },
+          {
+            "file": "../../../firmware/asl_live/src/model_runner.cpp"
+          },
+          {
+            "file": "generated/platform.cpp"
+          },
+          {
+            "file": "../../../firmware/vendor/alif_viewfinder/viewfinder/camera/isp_calibration.c"
+          },
+          {
+            "file": "../../../firmware/vendor/alif_viewfinder/viewfinder/camera/isp_calibration_mt9m114.c"
+          }
+        ]
+      }
+    ],
+    "components": [
+      {
+        "component": "ARM::CMSIS:CORE"
+      },
+      {
+        "component": "AlifSemiconductor::Device:Startup"
+      },
+      {
+        "component": "AlifSemiconductor::Device:SOC Peripherals:PINCONF"
+      },
+      {
+        "component": "AlifSemiconductor::Device:SOC Peripherals:GPIO"
+      },
+      {
+        "component": "AlifSemiconductor::CMSIS Driver:USART"
+      },
+      {
+        "component": "AlifSemiconductor::Device:SOC Peripherals:MHU"
+      },
+      {
+        "component": "AlifSemiconductor::BSP:Board Config"
+      },
+      {
+        "component": "AlifSemiconductor::BSP:DevKit Config&DevKit-e8"
+      },
+      {
+        "component": "AlifSemiconductor::Services:Secure Enclave:core&Source"
+      },
+      {
+        "component": "AlifSemiconductor::Services:Secure Enclave:Initialization Helper&Source"
+      },
+      {
+        "component": "AlifSemiconductor::Device:SOC Peripherals:CDC"
+      },
+      {
+        "component": "AlifSemiconductor::Device:SOC Peripherals:CPI"
+      },
+      {
+        "component": "AlifSemiconductor::Device:SOC Peripherals:MIPI DSI CSI2 DPHY"
+      },
+      {
+        "component": "AlifSemiconductor::Device:SOC Peripherals:MIPI CSI2"
+      },
+      {
+        "component": "AlifSemiconductor::Device:SOC Peripherals:MIPI DSI"
+      },
+      {
+        "component": "AlifSemiconductor::Device:SOC Peripherals:ISP"
+      },
+      {
+        "component": "AlifSemiconductor::BSP:External peripherals:ILI9806E LCD panel"
+      },
+      {
+        "component": "AlifSemiconductor::BSP:External peripherals:CAMERA Sensor MT9M114"
+      },
+      {
+        "component": "AlifSemiconductor::CMSIS Driver:I2C"
+      }
+    ],
+    "output": {
+      "base-name": "camera-inference",
+      "type": [
+        "elf",
+        "bin",
+        "map"
+      ]
+    },
+    "define": [
+      "C10_USING_CUSTOM_GENERATED_MACROS",
+      "ETHOSU85",
+      "ENSEMBLE_SOC_GEN2"
+    ],
+    "add-path": [
+      "../../../firmware/camera_inference/include",
+      "../../../firmware/smoke/include",
+      "../../../firmware/stored_image/include",
+      "assets",
+      "../../../firmware/vendor/alif_viewfinder/viewfinder/camera",
+      "../runtime-cortex-m55/include",
+      "../runtime-cortex-m55/include/executorch/runtime/core/portable_type/c10",
+      "../../../firmware/asl_live/include",
+      "../../../firmware/camera_overlay/include"
+    ],
+    "linker": [
+      {
+        "script": "RTE/Device/AE822FA0E5597LS0_M55_HP/linker_gnu_mram.ld.src",
+        "for-compiler": "GCC"
+      }
+    ],
+    "misc": [
+      {
+        "for-compiler": "GCC",
+        "Link": [
+          "-Wl,--start-group",
+          "-Wl,--whole-archive",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libexecutorch.a",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libexecutorch_core.a",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libexecutorch_delegate_ethos_u.a",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libcortex_m_ops_lib.a",
+          "-Wl,--no-whole-archive",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libcortex_m_kernels.a",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libportable_ops_lib.a",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libportable_kernels.a",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libquantized_ops_lib.a",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libquantized_kernels.a",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libkernels_util_all_deps.a",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libcmsis-nn.a",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libflatccrt.a",
+          "/home/tatin/projects/hackathon/HandGPT/.work/inference/runtime-cortex-m55/lib/libethosu_core_driver.a",
+          "-Wl,--end-group"
+        ]
+      }
+    ]
+  }
+}
