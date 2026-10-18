@@ -1,0 +1,66 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "HandGPT: Build camera coexistence (no device access)",
+            "detail": "Build only. CPU preview plus the STORED-image self-test; camera capture pauses during inference. Not live classification.",
+            "type": "process",
+            "command": "python3",
+            "args": ["-m", "tools.camera_inference_firmware", "--layout", "hp-only-large", "--image", "${input:storedImagePath}", "--jobs", "1"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "problemMatcher": [],
+            "presentation": {"reveal": "always", "panel": "dedicated"}
+        },
+        {
+            "label": "HandGPT: Build stored image (HP-only layout, no device access)",
+            "detail": "Build only. Reclaims default HE/user MRAM in the generated layout; does not program the board.",
+            "type": "process",
+            "command": "python3",
+            "args": ["-m", "tools.stored_image_firmware", "--layout", "hp-only-large", "--image", "${input:storedImagePath}", "--jobs", "1"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "problemMatcher": [],
+            "presentation": {"reveal": "always", "panel": "dedicated"}
+        },
+        {
+            "label": "HandGPT: Build smoke (no device access)",
+            "type": "process",
+            "command": "python3",
+            "args": ["-m", "tools.smoke_firmware", "--jobs", "1"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "problemMatcher": []
+        },
+        {
+            "label": "HandGPT: Prepare smoke programming (no device access)",
+            "type": "process",
+            "command": "python3",
+            "args": ["-m", "tools.program_smoke", "prepare", "--setools-root", "${input:smokeSetoolsRoot}", "--port", "${input:smokePort}"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "problemMatcher": [],
+            "presentation": {"reveal": "always", "panel": "dedicated"}
+        },
+        {
+            "label": "HandGPT: Review prepared smoke (no device access)",
+            "type": "process",
+            "command": "python3",
+            "args": ["-m", "tools.program_smoke", "review"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "problemMatcher": [],
+            "presentation": {"reveal": "always", "panel": "dedicated"}
+        },
+        {
+            "label": "HandGPT: Program prepared smoke (WRITES BOARD)",
+            "detail": "Requires a prepared package and typing PROGRAM E8-HP SMOKE. Replaces Viewfinder on M55 HP and writes boot/device configuration.",
+            "type": "process",
+            "command": "python3",
+            "args": ["-m", "tools.program_smoke", "program", "--write"],
+            "options": {"cwd": "${workspaceFolder}"},
+            "problemMatcher": [],
+            "presentation": {"reveal": "always", "focus": true, "panel": "dedicated"}
+        }
+    ],
+    "inputs": [
+        {"id": "storedImagePath", "type": "promptString", "description": "Original image used by the MobileNet export", "default": "ml/reference/images/cat.jpg"},
+        {"id": "smokeSetoolsRoot", "type": "promptString", "description": "Installed SETOOLS 1.112.00 directory (not the generated workspace)", "default": "~/alif/app-release-exec-linux"},
+        {"id": "smokePort", "type": "promptString", "description": "Explicit SETOOLS serial port; close serial monitors before programming", "default": "/dev/ttyACM0"}
+    ]
+}

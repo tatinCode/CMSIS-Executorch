@@ -1,0 +1,21 @@
+# Core compatibility pins for the E8 reference workflow, not the learning tutorial.
+# Transitive versions are recorded in .work/inference/environment.freeze.txt.
+torch==2.10.0
+torchvision==0.25.0
+torchao==0.15.0
+numpy==2.2.6
+Pillow==12.1.0
+ethos-u-vela==4.5.0
+ml_dtypes==0.5.1
+flatbuffers==24.3.25
+pybind11==2.13.6
+cmake==3.31.6
+setuptools==80.9.0
+wheel==0.45.1
+packaging==25.0
+pyyaml==6.0.3
+zstd==1.5.7.2
+certifi>=2025.1.31
+scikit-build-core==0.11.6
+setuptools-scm==9.2.2
+ninja==1.13.0

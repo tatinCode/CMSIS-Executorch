@@ -1,0 +1,3 @@
+[submodule "firmware/vendor/alif_viewfinder"]
+	path = firmware/vendor/alif_viewfinder
+	url = git@github.com:tatinCode/alif_M55-viewfinder.git

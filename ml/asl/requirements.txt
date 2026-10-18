@@ -1,0 +1,5 @@
+# Match the working export environment; no ExecuTorch build is needed to train.
+torch==2.10.0
+torchvision==0.25.0
+numpy==2.2.6
+Pillow==12.1.0

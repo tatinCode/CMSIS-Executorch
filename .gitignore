@@ -85,3 +85,12 @@ fvp_stdout.log
 !.vscode/fvp.sh
 !.vscode/fvp.Dockerfile
 !.vscode/launch.json.mac
+!.vscode/tasks.json
+
+# HandGPT local dependencies, models, datasets, logs, and build outputs.
+/.work/
+/asl-alphabet.zip
+/asl_alphabet_train/
+/asl_alphabet_test/
+*.pyo
+*.pyd

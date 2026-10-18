@@ -1,5 +1,21 @@
 # ExecuTorch on Ethos-U
 
+## HandGPT integration
+
+This branch also contains HandGPT's offline ASL handshape recognition project
+for the Alif Ensemble E8. See [HandGPT setup and demo instructions](HandGPT_README.md)
+for hardware requirements, limitations, and links to training and firmware guides.
+The existing CMSIS template and build configuration remain unchanged.
+
+Initialize the HandGPT firmware dependency after cloning:
+
+```bash
+git submodule update --init --recursive
+```
+
+Local dependencies, models, build outputs (`.work/`), and downloaded ASL datasets
+are not included. Follow the HandGPT setup guide to prepare a fresh checkout.
+
 [![Build and test Ethos-U85-256](https://github.com/Arm-Examples/CMSIS-Executorch/actions/workflows/test-cmsis-executorch.yml/badge.svg)](https://github.com/Arm-Examples/CMSIS-Executorch/actions/workflows/test-cmsis-executorch.yml)
 [![Build and test Ethos-U55-128](https://github.com/Arm-Examples/CMSIS-Executorch/actions/workflows/test-cmsis-executorch-u55.yml/badge.svg)](https://github.com/Arm-Examples/CMSIS-Executorch/actions/workflows/test-cmsis-executorch-u55.yml)
 [![Test Python environment](https://github.com/Arm-Examples/CMSIS-Executorch/actions/workflows/test-python-environment.yml/badge.svg)](https://github.com/Arm-Examples/CMSIS-Executorch/actions/workflows/test-python-environment.yml)
